@@ -15,9 +15,8 @@ public class MyFirstProgram {
     System.out.println("Powieszchnia prostokąta o bokach: " + r.a + " i " + r.b + " = " + r.area());
 
 
-    Point h = new Point();
-    h.a = 4;
-    h.b = 8;
+    Point h = new Point(3,4);
+
     System.out.println("odległość między punktami: " + "a - " + h.a + " oraz " + "b - " + h.b + " = " + h.hypotenuse());
 
   }
