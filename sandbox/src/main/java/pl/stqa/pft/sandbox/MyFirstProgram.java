@@ -8,27 +8,22 @@ public class MyFirstProgram {
     hello("user");
     hello("Szymon");
 
-    double l = 5;
-    System.out.println("Powieszchnia kwadratu o boku: " + l + " = " + area(l));
+    Square s = new Square(5); // dzieki konstruktorowi nie tworzyć atrybutów tylko można je przenieść
+    System.out.println("Powieszchnia kwadratu o boku: " + s.l + " = " + s.area());
 
-    double a = 4;
-    double b = 6;
-    System.out.println("Powieszchnia prostokąta o bokach: " + a + " i " + b + " = " + area(a, b));
+    Rectangle r = new Rectangle(4, 6);
+    System.out.println("Powieszchnia prostokąta o bokach: " + r.a + " i " + r.b + " = " + r.area());
 
+
+    Point h = new Point();
+    h.a = 4;
+    h.b = 8;
+    System.out.println("odległość między punktami: " + "a - " + h.a + " oraz " + "b - " + h.b + " = " + h.hypotenuse());
 
   }
 
   public static void hello(String somebody) {
     System.out.println("Hello, " + somebody + "!");
   }
-
-  public static double area(double len) {
-    return len * len;
-  }
-
-  public static double area(double a, double b) {
-    return a * b;
-  }
-
 
 }
